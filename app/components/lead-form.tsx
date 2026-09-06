@@ -24,8 +24,9 @@ export function LeadForm() {
             <Eyebrow>Free Roof Analysis</Eyebrow>
             <SectionHeading>Request a Free Roof Analysis</SectionHeading>
             <p className="mt-6 text-lg leading-relaxed text-ink">
-              Tell us a little about your property and roofing needs. A no-
-              obligation consultation with an experienced Miami roofing company.
+              Tell us a little about your property and roofing needs, and an
+              experienced Miami roofing company will follow up about your free
+              roof analysis.
             </p>
             <div className="mt-8 space-y-3 text-[15px]">
               <p className="font-semibold text-navy">

@@ -39,9 +39,8 @@ export function Projects() {
 
         <Reveal>
           <p className="mt-8 text-center text-xs text-ink">
-            Project descriptions are based on work described in the company&apos;s
-            public customer reviews. Photography would be supplied by High Point
-            Roofing.
+            Categories reflect High Point Roofing&apos;s roofing services. Project
+            photography would be supplied by the company.
           </p>
         </Reveal>
       </Container>

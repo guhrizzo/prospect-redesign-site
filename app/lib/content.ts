@@ -32,7 +32,7 @@ export const trustItems = [
   { stat: "35+ Years", label: "Serving Miami" },
   { stat: "Licensed & Insured", label: "Professional Roofing Services" },
   { stat: "Residential & Commercial", label: "Roofing Solutions" },
-  { stat: "Free Roof Analysis", label: "No-Obligation Consultation" },
+  { stat: "Free Roof Analysis", label: "Call or Request Online" },
 ] as const;
 
 export const services = [
@@ -66,7 +66,7 @@ export const whyPoints = [
   },
   {
     title: "Licensed & Insured",
-    copy: "Professional roofing services with customer protection in mind.",
+    copy: "A fully licensed and insured Miami roofing company (CCC1326101).",
   },
   {
     title: "Quality Workmanship",
@@ -79,49 +79,54 @@ export const whyPoints = [
 ];
 
 /**
- * Real 5-star Google reviews for High Point Roofing Corp.
- * Long reviews are lightly trimmed with an ellipsis; wording is unchanged.
+ * The three customer reviews High Point Roofing Corp features on its own
+ * homepage. Quoted verbatim; an ellipsis marks where a longer review is trimmed.
  */
 export const reviews = [
   {
     quote:
-      "From the point of the referral to the completion of the roof installation, Ben and his team were exceptional and I felt like family. They showed up when they said they would, answered each call instantly, and completed the installation in a timely manner. I could not be happier with my choice in hiring High Point Roofing Corp for my metal roof selection.",
-    name: "Gigi Gonzalez",
-    source: "Google Review",
-  },
-  {
-    quote:
-      "We hired Highpoint Roofing in preparation for the sale of our home. They were excellent! Highly efficient, very responsive, and did a beautiful job on installing a metal roof. We are extremely pleased and would strongly recommend their services.",
-    name: "Akira Gutierrez Renzulli",
-    source: "Google Review",
-  },
-  {
-    quote:
-      "We had gotten 4 quotes from different roofing companies including High Point Roofing. The quote was very clear and prices were very reasonable. All the workers were very polite and super careful not to leave any debris around the premises. They did a more than excellent job and we totally recommend this company.",
+      "We had gotten 4 quotes from different roofing companies including High Point Roofing… We also checked the quote and it was very clear and prices were very reasonable. Another thing was that all the workers were very polite and super careful not to leave any debris around the premises. They did a more than excellent job and we totally recommend this company.",
     name: "Zeanne Hernandez",
+    source: "Google Review",
+  },
+  {
+    quote:
+      "This company are true professionals. Benny is friendly and a real gentleman. Excellent quality work. Good value, I can highly recommend for your next project.",
+    name: "Jules Barraclough",
+    source: "Google Review",
+  },
+  {
+    quote:
+      "High Point Roofing is an excellent company to work with and I would highly recommend using them for your roofing needs. They were very communicative with quotes and scheduling, and did such a great job on our home!",
+    name: "Stafford Turnage",
     source: "Google Review",
   },
 ];
 
+/**
+ * The company's real portfolio page is an untitled photo gallery, so these
+ * cards are labelled by the roofing services High Point Roofing actually
+ * offers — no specific project details are claimed.
+ */
 export const projects = [
   {
-    type: "Metal Roof Installation",
-    copy: "Standing-seam metal roof completed for a South Florida home ahead of sale.",
+    type: "Residential Roofing",
+    copy: "Roof installation and replacement for homes across Miami-Dade.",
     art: "residential" as const,
   },
   {
-    type: "Commercial Flat Roof",
-    copy: "Heat-reflective silicone coating applied to protect a flat commercial roof and reduce cooling load.",
+    type: "Commercial Roofing",
+    copy: "Roofing for commercial properties throughout South Florida.",
     art: "commercial" as const,
   },
   {
-    type: "Roof Leak Repair",
-    copy: "Persistent leaks from prior contractors traced, corrected and sealed for good.",
+    type: "Roof Repair",
+    copy: "Leak and storm-damage repairs for homes and businesses.",
     art: "repair" as const,
   },
   {
-    type: "Full Roof Replacement",
-    copy: "Aging residential roof stripped and rebuilt with new underlayment and tile.",
+    type: "Roof Replacement",
+    copy: "Full tear-off and replacement of aging or failing roofs.",
     art: "replacement" as const,
   },
 ];
