@@ -4,17 +4,26 @@ import { ArrowRight, Container, Cta } from "./ui";
 
 export function Hero() {
   return (
-    <section id="top" className="relative bg-warm pt-12 sm:pt-16">
+    <section id="top" className="relative isolate overflow-hidden bg-navy pt-12 text-white sm:pt-16">
+      <div className="absolute inset-0 -z-20">
+        <RoofArt
+          variant="hero"
+          className="h-full w-full object-center"
+        />
+      </div>
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(5,5,5,0.96)_0%,rgba(5,5,5,0.82)_38%,rgba(5,5,5,0.28)_72%,rgba(5,5,5,0.52)_100%)]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(5,5,5,0.72)_0%,transparent_42%,rgba(5,5,5,0.3)_100%)]" />
+
       <Container>
-        <div className="grid items-center gap-12 pb-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
-          <div>
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+        <div className="grid min-h-[680px] items-center gap-12 pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
+          <div className="max-w-2xl">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
               Miami Roofing Experts • Serving South Florida
             </p>
-            <h1 className="text-[2.5rem] font-bold leading-[1.05] tracking-tight text-navy sm:text-5xl lg:text-[3.5rem]">
+            <h1 className="text-[2.5rem] font-bold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-[3.5rem]">
               Miami Roofing Experts. Trusted Since 1989.
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/80">
               Professional residential and commercial roofing services backed by
               more than 35 years of experience. Quality workmanship, honest
               service and dependable solutions for properties throughout
@@ -29,46 +38,35 @@ export function Hero() {
               <Cta
                 href={company.phoneHref}
                 variant="secondary"
-                className="text-base"
+                className="border-white/30 bg-white/10 text-base text-white backdrop-blur-sm hover:bg-white/20"
               >
                 Call {company.phoneDisplay}
               </Cta>
             </div>
 
-            <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-navy/10 pt-6">
+            <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/20 pt-6">
               <div>
-                <dt className="text-xs font-medium uppercase tracking-wide text-ink">
+                <dt className="text-xs font-medium uppercase tracking-wide text-white/65">
                   Experience
                 </dt>
-                <dd className="text-lg font-bold text-navy">35+ Years</dd>
+                <dd className="text-lg font-bold text-white">35+ Years</dd>
               </div>
               <div>
-                <dt className="text-xs font-medium uppercase tracking-wide text-ink">
+                <dt className="text-xs font-medium uppercase tracking-wide text-white/65">
                   Credentials
                 </dt>
-                <dd className="text-lg font-bold text-navy">Licensed &amp; Insured</dd>
+                <dd className="text-lg font-bold text-white">Licensed &amp; Insured</dd>
               </div>
               <div>
-                <dt className="text-xs font-medium uppercase tracking-wide text-ink">
+                <dt className="text-xs font-medium uppercase tracking-wide text-white/65">
                   Coverage
                 </dt>
-                <dd className="text-lg font-bold text-navy">Miami-Dade County</dd>
+                <dd className="text-lg font-bold text-white">Miami-Dade County</dd>
               </div>
             </dl>
           </div>
 
-          <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-navy shadow-[var(--shadow-card)] sm:aspect-square lg:aspect-[4/5]">
-              <RoofArt
-                variant="hero"
-                className="h-full w-full"
-              />
-            </div>
-            <div className="absolute -bottom-5 -left-4 rounded-xl bg-white px-5 py-4 shadow-[var(--shadow-float)] sm:-left-8">
-              <p className="text-2xl font-bold leading-none text-navy">35+ Years</p>
-              <p className="mt-1 text-sm text-ink">Experience in Miami</p>
-            </div>
-          </div>
+          <div className="hidden lg:block" aria-hidden="true" />
         </div>
       </Container>
     </section>
