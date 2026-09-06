@@ -28,8 +28,8 @@ export function SiteHeader() {
     <header
       className={`sticky top-0 z-50 transition-colors duration-300 ${
         scrolled
-          ? "border-b border-navy/10 bg-warm/90 backdrop-blur-md"
-          : "border-b border-transparent bg-warm"
+          ? "border-b border-white/10 bg-navy/95 backdrop-blur-md"
+          : "border-b border-white/10 bg-navy"
       }`}
     >
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:h-20 sm:px-8">
@@ -38,7 +38,7 @@ export function SiteHeader() {
           className="flex items-center gap-2.5"
           aria-label={`${company.name} home`}
         >
-          <Logo className="h-8 w-8 shrink-0" />
+          <Logo className="h-11 w-24 shrink-0 sm:h-14 sm:w-32" />
           <span className="text-[15px] font-bold leading-tight tracking-tight text-navy sm:text-base">
             High Point<span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">
               Roofing Corp
@@ -51,7 +51,7 @@ export function SiteHeader() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-navy/80 transition-colors hover:text-navy"
+              className="text-sm font-medium text-white/85 transition-colors hover:text-navy"
             >
               {item.label}
             </a>
