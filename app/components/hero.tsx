@@ -11,8 +11,8 @@ export function Hero() {
           className="h-full w-full object-center"
         />
       </div>
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(5,5,5,0.96)_0%,rgba(5,5,5,0.82)_38%,rgba(5,5,5,0.28)_72%,rgba(5,5,5,0.52)_100%)]" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(5,5,5,0.72)_0%,transparent_42%,rgba(5,5,5,0.3)_100%)]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(16,24,32,0.94)_0%,rgba(16,24,32,0.78)_38%,rgba(16,24,32,0.24)_72%,rgba(16,24,32,0.46)_100%)]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(16,24,32,0.68)_0%,transparent_42%,rgba(16,24,32,0.26)_100%)]" />
 
       <Container>
         <div className="grid min-h-[680px] items-center gap-12 pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
