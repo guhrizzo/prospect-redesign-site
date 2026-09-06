@@ -116,7 +116,7 @@ export function LeadForm() {
                 </label>
                 <button
                   type="submit"
-                  className="mt-1 inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold text-navy shadow-[0_10px_24px_-8px_rgba(245,158,11,0.6)] transition-all hover:-translate-y-0.5 hover:bg-accent-600 sm:col-span-2"
+                  className="mt-1 inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold text-navy shadow-[0_10px_24px_-8px_rgba(24,169,173,0.42)] transition-all hover:-translate-y-0.5 hover:bg-accent-600 sm:col-span-2"
                 >
                   Request My Free Roof Analysis
                 </button>

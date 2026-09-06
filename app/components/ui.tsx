@@ -69,7 +69,7 @@ export function Cta({
     "inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
   const styles = {
     primary:
-      "bg-accent text-navy shadow-[0_10px_24px_-8px_rgba(245,158,11,0.6)] hover:bg-accent-600 hover:-translate-y-0.5",
+      "bg-accent text-navy shadow-[0_10px_24px_-8px_rgba(24,169,173,0.42)] hover:bg-accent-600 hover:-translate-y-0.5",
     secondary:
       "bg-white text-navy ring-1 ring-navy/15 hover:ring-navy/30 hover:-translate-y-0.5",
     ghost:
