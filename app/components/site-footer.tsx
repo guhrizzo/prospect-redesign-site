@@ -14,10 +14,7 @@ export function SiteFooter() {
       <Container className="py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
-            <div className="flex items-center gap-2.5">
-              <Logo className="h-8 w-8" />
-              <span className="text-base font-bold">High Point Roofing Corp</span>
-            </div>
+            <Logo className="h-10 w-auto" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
               A fully licensed and insured Miami roofing company serving South
               Florida since 1989.

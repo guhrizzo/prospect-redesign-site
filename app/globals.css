@@ -36,6 +36,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Tailwind v4 no longer sets cursor:pointer on buttons — restore it. */
+button:not(:disabled),
+[role="button"]:not(:disabled),
+summary {
+  cursor: pointer;
+}
+
 /* Section entrance animation */
 @media (prefers-reduced-motion: no-preference) {
   [data-reveal] {

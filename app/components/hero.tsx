@@ -1,21 +1,16 @@
 import { company } from "../lib/content";
-import { RoofArt } from "./roof-art";
+import { HeroCarousel } from "./hero-carousel";
 import { ArrowRight, Container, Cta } from "./ui";
 
 export function Hero() {
   return (
     <section id="top" className="relative isolate overflow-hidden bg-navy pt-12 text-white sm:pt-16">
-      <div className="absolute inset-0 -z-20">
-        <RoofArt
-          variant="hero"
-          className="h-full w-full object-center"
-        />
-      </div>
+      <HeroCarousel />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(16,24,32,0.94)_0%,rgba(16,24,32,0.78)_38%,rgba(16,24,32,0.24)_72%,rgba(16,24,32,0.46)_100%)]" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(16,24,32,0.68)_0%,transparent_42%,rgba(16,24,32,0.26)_100%)]" />
 
       <Container>
-        <div className="grid min-h-[680px] items-center gap-12 pb-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-24">
+        <div className="grid min-h-[680px] items-center gap-12 px-12 pb-20 sm:px-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:px-8 lg:pb-24 xl:px-0">
           <div className="max-w-2xl">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
               Miami Roofing Experts • Serving South Florida

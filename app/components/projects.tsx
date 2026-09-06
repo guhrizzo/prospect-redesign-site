@@ -18,10 +18,11 @@ export function Projects() {
               delay={(i % 2) * 80}
               className="group overflow-hidden rounded-2xl bg-navy ring-1 ring-navy/10"
             >
-              <div className="aspect-[16/9] overflow-hidden">
+              <div className="relative aspect-[16/9] overflow-hidden">
                 <RoofArt
                   variant={project.art}
-                  className="h-full w-full transition-transform duration-500 group-hover:scale-[1.04]"
+                  sizes="(min-width: 640px) 50vw, 100vw"
+                  className="transition-transform duration-500 group-hover:scale-[1.04]"
                 />
               </div>
               <div className="p-6">

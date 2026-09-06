@@ -1,33 +1,41 @@
-import type { CSSProperties } from "react";
+import Image from "next/image";
 
 type Variant = "hero" | "residential" | "commercial" | "repair" | "replacement";
 
+/**
+ * Project photography from High Point Roofing Corp's own website, downloaded
+ * into /public/roofing so the concept has no external image dependencies.
+ *
+ * Renders a fill <Image>, so the parent element must be positioned
+ * (e.g. `relative`) and give the image its size (usually via `aspect-*`).
+ */
 const imageByVariant: Record<Variant, string> = {
-  hero: "https://highpointroofingcorp.com/wp-content/uploads/2021/05/slider2.jpg",
-  residential:
-    "https://highpointroofingcorp.com/wp-content/uploads/2021/10/highpoint-Roofing-Corp.Miami-Roofing-Contractors-1-4.jpg",
-  commercial: "https://highpointroofingcorp.com/wp-content/uploads/2020/03/service2.jpg",
-  repair:
-    "https://highpointroofingcorp.com/wp-content/uploads/2021/10/highpoint-Roofing-Corp.Miami-Roofing-Contractors-1.24.20-PM.jpg",
-  replacement:
-    "https://highpointroofingcorp.com/wp-content/uploads/2021/10/highpoint-Roofing-Corp.Miami-Roofing-Contractors-1.24.20-PM-1.26.23-PM-1.jpg",
+  hero: "/hero/slide-2.jpg",
+  residential: "/roofing/residential.jpg",
+  commercial: "/roofing/commercial.jpg",
+  repair: "/roofing/repair.jpg",
+  replacement: "/roofing/replacement.jpg",
 };
 
 export function RoofArt({
   variant = "residential",
   className = "",
-  style,
+  sizes = "(min-width: 1024px) 33vw, 100vw",
+  priority = false,
 }: {
   variant?: Variant;
   className?: string;
-  style?: CSSProperties;
+  sizes?: string;
+  priority?: boolean;
 }) {
   return (
-    <img
+    <Image
       src={imageByVariant[variant]}
       alt="High Point Roofing Corp project"
+      fill
+      sizes={sizes}
+      priority={priority}
       className={`object-cover ${className}`}
-      style={style}
     />
   );
 }

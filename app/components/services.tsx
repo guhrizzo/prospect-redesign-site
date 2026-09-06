@@ -18,10 +18,11 @@ export function Services() {
               delay={i * 80}
               className="group flex flex-col overflow-hidden rounded-2xl bg-warm ring-1 ring-navy/10 transition-shadow duration-300 hover:shadow-[var(--shadow-card)]"
             >
-              <div className="aspect-[16/10] overflow-hidden bg-navy">
+              <div className="relative aspect-[16/10] overflow-hidden bg-navy">
                 <RoofArt
                   variant={service.art}
-                  className="h-full w-full transition-transform duration-500 group-hover:scale-[1.04]"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="transition-transform duration-500 group-hover:scale-[1.04]"
                 />
               </div>
               <div className="flex flex-1 flex-col p-6">

@@ -38,12 +38,7 @@ export function SiteHeader() {
           className="flex items-center gap-2.5"
           aria-label={`${company.name} home`}
         >
-          <Logo className="h-11 w-24 shrink-0 sm:h-14 sm:w-32" />
-          <span className="text-[15px] font-bold leading-tight tracking-tight text-navy sm:text-base">
-            High Point<span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">
-              Roofing Corp
-            </span>
-          </span>
+          <Logo className="h-8 w-auto shrink-0 sm:h-9" />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -51,7 +46,7 @@ export function SiteHeader() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-white/85 transition-colors hover:text-navy"
+              className="text-sm font-medium text-white/85 transition-colors hover:text-accent"
             >
               {item.label}
             </a>
@@ -61,7 +56,7 @@ export function SiteHeader() {
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href={company.phoneHref}
-            className="text-sm font-semibold text-navy hover:text-accent-600"
+            className="text-sm font-semibold text-white transition-colors hover:text-accent"
           >
             {company.phoneDisplay}
           </a>
@@ -74,7 +69,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2 lg:hidden">
           <a
             href={company.phoneHref}
-            className="rounded-lg px-3 py-2 text-sm font-semibold text-navy ring-1 ring-navy/15"
+            className="rounded-lg px-3 py-2 text-sm font-semibold text-white ring-1 ring-white/25"
           >
             Call
           </a>
@@ -83,7 +78,7 @@ export function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-navy ring-1 ring-navy/15"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-white ring-1 ring-white/25"
           >
             <span className="sr-only">Menu</span>
             <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none">
@@ -115,7 +110,7 @@ export function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-base font-medium text-navy hover:bg-navy/5"
+                className="rounded-lg px-3 py-3 text-base font-medium text-white hover:bg-white/10"
               >
                 {item.label}
               </a>

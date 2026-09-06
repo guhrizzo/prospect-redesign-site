@@ -7,8 +7,11 @@ export function ValueSection() {
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal className="order-2 lg:order-1">
-            <div className="aspect-[5/4] overflow-hidden rounded-2xl bg-navy shadow-[var(--shadow-card)]">
-              <RoofArt variant="residential" className="h-full w-full" />
+            <div className="relative aspect-[5/4] overflow-hidden rounded-2xl bg-navy shadow-[var(--shadow-card)]">
+              <RoofArt
+                variant="residential"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
             </div>
           </Reveal>
 
